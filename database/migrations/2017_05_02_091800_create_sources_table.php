@@ -35,6 +35,6 @@ class CreateSourcesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sorts');
+        Schema::dropIfExists('sources');
     }
 }
