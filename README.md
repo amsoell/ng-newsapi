@@ -6,9 +6,11 @@ Laravel API built to consume the [NewsAPI](https://newsapi.org) service, store i
 **Setup**
 
 1. Clone the repository
-2. Copy the `.env-dist` file into `.env`
-3. Update `.env` with your database credentials and News API key
-4. Run `php artisan migrate` to create the database structure
+2. Run `composer install`
+3. Copy the `.env-dist` file into `.env`
+4. Update `.env` with your database credentials and News API key
+5. Run `php artisan migrate` to create the database structure
+6. run `php artisan serve` to spin up a localhost instance
 
 From here, you can go to the `/api/sources` endpoint to pull in the news sources. Imported data is created in the local database, with additional `NG_Description` and `NG_Review` fields, and the results are output in JSON format.
 
