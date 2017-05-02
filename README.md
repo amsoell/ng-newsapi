@@ -14,7 +14,7 @@ Laravel API built to consume the [NewsAPI](https://newsapi.org) service, store i
 
 From here, you can go to the `/api/sources` endpoint to pull in the news sources. Imported data is created in the local database, with additional `NG_Description` and `NG_Review` fields, and the results are output in JSON format.
 
-Using the `id` attribute, you can then consume individual sources by sending a request to `/api/sources/{id}`. Imported articles are also saved to the local database with additional fields, and results are output in JSON format.
+Using the `id` attribute, you can then consume individual sources by sending a request to `/api/sources/{id}/articles`. Imported articles are also saved to the local database with additional fields, and results are output in JSON format.
 
 **API Documentation**
 
