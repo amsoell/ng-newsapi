@@ -14,3 +14,4 @@ use Illuminate\Http\Request;
 */
 
 Route::resource('sources', 'SourceController', ['only' => ['index', 'show']]);
+Route::resource('sources.articles', 'ArticleController', ['only' => ['index', 'show']]);
