@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Article;
 use App\Source;
-use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
 
 class SourceController extends Controller

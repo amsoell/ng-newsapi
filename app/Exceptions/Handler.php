@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use GuzzleHttp\Exception\GuzzleException;
 use Response;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
@@ -48,6 +49,8 @@ class Handler extends ExceptionHandler
     {
         if ($exception instanceof ModelNotFoundException) {
             return Response::json(['message' => 'Entity not found'], 403);
+        } elseif ($exception instanceof GuzzleException) {
+            return Response::json(['message' => 'http error'], 403);
         } else {
             return Response::json(['message' => 'server error'], 500);
         }
