@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Source;
 use GuzzleHttp\Client;
+use Carbon\Carbon;
 
 class SourceController extends Controller
 {
@@ -61,7 +62,7 @@ class SourceController extends Controller
                 'description'    => $article->description,
                 'url'            => $article->url,
                 'urlToImage'     => $article->urlToImage,
-                'publishedAt'    => $article->publishedAt,
+                'publishedAt'    => Carbon::parse($article->publishedAt),
                 'NG_Description' => 'www',
                 'NG_Review'      => 'zzz',
             ]);

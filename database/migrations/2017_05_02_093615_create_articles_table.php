@@ -21,7 +21,7 @@ class CreateArticlesTable extends Migration
             $table->text('description');
             $table->string('url');
             $table->string('urlToImage');
-            $table->string('publishedAt');
+            $table->timestamp('publishedAt');
             $table->string('NG_Description');
             $table->string('NG_Review');
             $table->timestamps();
