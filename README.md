@@ -16,6 +16,10 @@ From here, you can go to the `/api/sources` endpoint to pull in the news sources
 
 Using the `id` attribute, you can then consume individual sources by sending a request to `/api/sources/{id}`. Imported articles are also saved to the local database with additional fields, and results are output in JSON format.
 
+**API Documentation**
+
+Full API documentation is available in the [ENDPOINTS.apib](ENDPOINTS.apib) file, as well as online at [docs.ngnewsapi.apiary.io](http://docs.ngnewsapi.apiary.io/).
+
 **Expansion Considerations**
 
 Given that this is a starter excersize, I didn't want to get carried away with items outside of scope. Were this a production application, however, next steps would include:
