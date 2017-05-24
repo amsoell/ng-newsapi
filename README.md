@@ -1,7 +1,16 @@
 ng-newsapi
 ===
 
-Laravel API built to consume the [NewsAPI](https://newsapi.org) service, store it locally, and allow querying
+**ng-newsapi** is the result of a code challenge presented in 2017. The result is a Laravel-powered API built to consume the [NewsAPI](https://newsapi.org) service, store it locally, and allow querying
+
+**Project Specifications**
+
+> 1. Pick one of these API’s: 
+> https://newsapi.org/
+> https://skyscanner.github.io/slate/#api-documentation
+> 2. Create an API to consume that API using Laravel
+> 3. Append each ‘record’ with two fields e.g NG_Description and NG_Review
+> 4. Output a list of records (edited)
 
 **Setup**
 
